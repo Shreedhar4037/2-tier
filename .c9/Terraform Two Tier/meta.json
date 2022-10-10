@@ -1,0 +1,5 @@
+{
+  "id": "Terraform Two Tier",
+  "configuration": "file:///home/ec2-user/environment/.c9",
+  "name": "Terraform Two Tier"
+}
