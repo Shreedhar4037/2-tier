@@ -1,4 +1,4 @@
-# --- networking/outputs.tf ---
+# --- root/outputs.tf ---
 
 output "vpc_id" {
   value = aws_vpc.w21_project_vpc.id

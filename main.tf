@@ -1,4 +1,4 @@
-# --- networking/main.tf ---
+# --- root/main.tf ---
 
 resource "random_integer" "random" {
   min = 1

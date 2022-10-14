@@ -1,4 +1,4 @@
-# --- loadbalancing/variables.tf ---
+# --- root/variables.tf ---
 
 variable "public_subnet" {}
 variable "vpc_id" {}
