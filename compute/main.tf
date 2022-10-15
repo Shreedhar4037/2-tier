@@ -57,9 +57,9 @@ resource "aws_launch_template" "w21_project_database" {
 resource "aws_autoscaling_group" "w21_project_database" {
   name                = "w21_project_database"
   vpc_zone_identifier = tolist(var.public_subnet)
-  min_size            = 2
+  min_size            = 3
   max_size            = 3
-  desired_capacity    = 2
+  desired_capacity    = 3
 
   launch_template {
     id      = aws_launch_template.w21_project_database.id
