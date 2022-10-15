@@ -13,7 +13,7 @@ resource "aws_lb" "w21_project_lb" {
 }
 
 resource "aws_lb_target_group" "w21_project_tg" {
-  name     = "w21_project-lb-tg-${substr(uuid(), 0, 3)}"
+  name     = "w21-project-lb-tg-${substr(uuid(), 0, 3)}"
   protocol = var.tg_protocol
   port     = var.tg_port
   vpc_id   = var.vpc_id
