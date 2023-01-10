@@ -26,3 +26,10 @@ module "loadbalancing" {
   web_sg        = module.networking.web_sg
   database_asg  = module.compute.database_asg
 }
+
+module "s3-backend" {
+  source      = "./s3-backend"
+  bucket_name = var.bucket_name
+  #acl         = "private"
+  #tags        = var.tags
+}
